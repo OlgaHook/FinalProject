@@ -3,29 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B46CFA5426CFD7F2009E928F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA5326CFD7F2009E928F /* AppDelegate.swift */; };
 		B46CFA5626CFD7F2009E928F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA5526CFD7F2009E928F /* SceneDelegate.swift */; };
-		B46CFA5826CFD7F2009E928F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA5726CFD7F2009E928F /* ViewController.swift */; };
+		B46CFA5826CFD7F2009E928F /* NewsPokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA5726CFD7F2009E928F /* NewsPokeViewController.swift */; };
 		B46CFA5B26CFD7F2009E928F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46CFA5926CFD7F2009E928F /* Main.storyboard */; };
 		B46CFA5E26CFD7F2009E928F /* FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA5C26CFD7F2009E928F /* FinalProject.xcdatamodeld */; };
 		B46CFA6026CFD7F4009E928F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46CFA5F26CFD7F4009E928F /* Assets.xcassets */; };
 		B46CFA6326CFD7F4009E928F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46CFA6126CFD7F4009E928F /* LaunchScreen.storyboard */; };
+		B46CFA7226CFDB01009E928F /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = B46CFA7126CFDB01009E928F /* Gloss */; };
+		B46CFA7526CFDB5D009E928F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA7426CFDB5D009E928F /* Alert.swift */; };
+		B46CFA7726CFFA9C009E928F /* PokeNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA7626CFFA9C009E928F /* PokeNewsTableViewCell.swift */; };
+		B46CFA7A26CFFDF2009E928F /* PokeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFA7926CFFDF2009E928F /* PokeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B46CFA5026CFD7F1009E928F /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CFA5326CFD7F2009E928F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46CFA5526CFD7F2009E928F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B46CFA5726CFD7F2009E928F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B46CFA5726CFD7F2009E928F /* NewsPokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPokeViewController.swift; sourceTree = "<group>"; };
 		B46CFA5A26CFD7F2009E928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B46CFA5D26CFD7F2009E928F /* FinalProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalProject.xcdatamodel; sourceTree = "<group>"; };
 		B46CFA5F26CFD7F4009E928F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46CFA6226CFD7F4009E928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B46CFA6426CFD7F4009E928F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46CFA7426CFDB5D009E928F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		B46CFA7626CFFA9C009E928F /* PokeNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeNewsTableViewCell.swift; sourceTree = "<group>"; };
+		B46CFA7926CFFDF2009E928F /* PokeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46CFA7226CFDB01009E928F /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +66,59 @@
 		B46CFA5226CFD7F2009E928F /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				B46CFA5326CFD7F2009E928F /* AppDelegate.swift */,
-				B46CFA5526CFD7F2009E928F /* SceneDelegate.swift */,
-				B46CFA5726CFD7F2009E928F /* ViewController.swift */,
-				B46CFA5926CFD7F2009E928F /* Main.storyboard */,
+				B46CFA7326CFDB49009E928F /* Extension */,
+				B46CFA6A26CFD80B009E928F /* AppDelegate */,
+				B46CFA7826CFFDAE009E928F /* Model */,
+				B46CFA6C26CFD82B009E928F /* View */,
+				B46CFA6B26CFD819009E928F /* Controller */,
 				B46CFA5F26CFD7F4009E928F /* Assets.xcassets */,
-				B46CFA6126CFD7F4009E928F /* LaunchScreen.storyboard */,
 				B46CFA6426CFD7F4009E928F /* Info.plist */,
 				B46CFA5C26CFD7F2009E928F /* FinalProject.xcdatamodeld */,
 			);
 			path = FinalProject;
+			sourceTree = "<group>";
+		};
+		B46CFA6A26CFD80B009E928F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B46CFA5326CFD7F2009E928F /* AppDelegate.swift */,
+				B46CFA5526CFD7F2009E928F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B46CFA6B26CFD819009E928F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B46CFA5726CFD7F2009E928F /* NewsPokeViewController.swift */,
+				B46CFA7626CFFA9C009E928F /* PokeNewsTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B46CFA6C26CFD82B009E928F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B46CFA5926CFD7F2009E928F /* Main.storyboard */,
+				B46CFA6126CFD7F4009E928F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B46CFA7326CFDB49009E928F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B46CFA7426CFDB5D009E928F /* Alert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B46CFA7826CFFDAE009E928F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B46CFA7926CFFDF2009E928F /* PokeItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +137,9 @@
 			dependencies = (
 			);
 			name = FinalProject;
+			packageProductDependencies = (
+				B46CFA7126CFDB01009E928F /* Gloss */,
+			);
 			productName = FinalProject;
 			productReference = B46CFA5026CFD7F1009E928F /* FinalProject.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +167,9 @@
 				Base,
 			);
 			mainGroup = B46CFA4726CFD7F1009E928F;
+			packageReferences = (
+				B46CFA7026CFDB01009E928F /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = B46CFA5126CFD7F1009E928F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,10 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46CFA5826CFD7F2009E928F /* ViewController.swift in Sources */,
+				B46CFA5826CFD7F2009E928F /* NewsPokeViewController.swift in Sources */,
 				B46CFA5426CFD7F2009E928F /* AppDelegate.swift in Sources */,
 				B46CFA5E26CFD7F2009E928F /* FinalProject.xcdatamodeld in Sources */,
+				B46CFA7526CFDB5D009E928F /* Alert.swift in Sources */,
+				B46CFA7A26CFFDF2009E928F /* PokeItem.swift in Sources */,
 				B46CFA5626CFD7F2009E928F /* SceneDelegate.swift in Sources */,
+				B46CFA7726CFFA9C009E928F /* PokeNewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B46CFA7026CFDB01009E928F /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B46CFA7126CFDB01009E928F /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B46CFA7026CFDB01009E928F /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B46CFA5C26CFD7F2009E928F /* FinalProject.xcdatamodeld */ = {
