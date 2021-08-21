@@ -123,6 +123,7 @@ extension NewsPokeViewController: UITableViewDelegate, UITableViewDataSource{
         //to have image
         if let pokeImage = pokeItem.pokeImage{
             cell.pokeNewsImage.image = pokeImage
+            
         }
         
         
