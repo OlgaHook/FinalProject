@@ -7,6 +7,7 @@
 
 import UIKit
 
+//create reusable extension 
 extension UIViewController{
     func basicAlert(title: String?, message: String?){
       //it should run in new thread, reload and present a popUp so we need ->

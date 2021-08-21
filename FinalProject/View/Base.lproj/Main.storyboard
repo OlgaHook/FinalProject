@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iO3-bH-p9d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Qf-Qi-F0e">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -159,49 +159,73 @@
             <point key="canvasLocation" x="1804" y="797"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="IEt-wU-tto">
+        <scene sceneID="rMN-JH-ZZD">
             <objects>
-                <viewController id="iO3-bH-p9d" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NHJ-Bi-Oqx">
+                <viewController id="3Qf-Qi-F0e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hJ-15-TGI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="elf-Um-JAY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="iLp-eB-dln">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYv-10-vQI">
-                                <rect key="frame" x="296" y="47" width="50" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dIH-S0-4ep">
+                                <rect key="frame" x="44" y="35" width="279" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go To Pokemon's World News" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mK-op-hex">
+                                        <rect key="frame" x="0.0" y="0.0" width="221" height="50"/>
+                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4c5-aI-JjW"/>
+                                            <constraint firstAttribute="width" constant="221" id="l1q-gU-3QS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIv-rc-8M9">
+                                        <rect key="frame" x="229" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GUf-4a-0WF"/>
+                                            <constraint firstAttribute="width" constant="50" id="lsG-cr-dCu"/>
+                                        </constraints>
+                                        <state key="normal" image="PokeBall"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="5K4-la-YT3" kind="presentation" id="8zi-bQ-B5e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="xhN-Xa-tYe"/>
-                                    <constraint firstAttribute="width" constant="50" id="z1w-5K-Rvm"/>
+                                    <constraint firstAttribute="height" constant="50" id="Lsu-aR-ZdC"/>
+                                    <constraint firstAttribute="width" constant="279" id="v3I-zi-EPb"/>
                                 </constraints>
-                                <state key="normal" image="PokeBall"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="5K4-la-YT3" kind="presentation" id="kKy-OF-PvN"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="4f3-E9-dDx"/>
+                        <viewLayoutGuide key="safeArea" id="iAb-mW-RU5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sYv-10-vQI" firstAttribute="leading" secondItem="4f3-E9-dDx" secondAttribute="leading" constant="296" id="1CS-nm-ogU"/>
-                            <constraint firstItem="sYv-10-vQI" firstAttribute="top" secondItem="4f3-E9-dDx" secondAttribute="top" constant="47" id="Rwg-KC-HXP"/>
-                            <constraint firstItem="4f3-E9-dDx" firstAttribute="bottom" secondItem="elf-Um-JAY" secondAttribute="bottom" id="e1P-3f-Guc"/>
-                            <constraint firstItem="elf-Um-JAY" firstAttribute="leading" secondItem="4f3-E9-dDx" secondAttribute="leading" id="lhc-W7-GEY"/>
-                            <constraint firstItem="4f3-E9-dDx" firstAttribute="trailing" secondItem="elf-Um-JAY" secondAttribute="trailing" id="nfp-k1-4ho"/>
-                            <constraint firstItem="4f3-E9-dDx" firstAttribute="trailing" secondItem="sYv-10-vQI" secondAttribute="trailing" constant="29" id="uVN-1c-FfC"/>
-                            <constraint firstItem="elf-Um-JAY" firstAttribute="top" secondItem="4f3-E9-dDx" secondAttribute="top" id="vRm-yp-DkD"/>
+                            <constraint firstItem="dIH-S0-4ep" firstAttribute="top" secondItem="iAb-mW-RU5" secondAttribute="top" constant="35" id="AMa-Ov-clP"/>
+                            <constraint firstItem="dIH-S0-4ep" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iAb-mW-RU5" secondAttribute="leading" constant="44" id="NP4-oP-1vm"/>
+                            <constraint firstItem="iLp-eB-dln" firstAttribute="leading" secondItem="iAb-mW-RU5" secondAttribute="leading" id="Pde-Zr-9aL"/>
+                            <constraint firstItem="iAb-mW-RU5" firstAttribute="trailing" secondItem="dIH-S0-4ep" secondAttribute="trailing" constant="52" id="QCv-fY-lpH"/>
+                            <constraint firstItem="iAb-mW-RU5" firstAttribute="bottom" secondItem="iLp-eB-dln" secondAttribute="bottom" id="dob-at-6Yg"/>
+                            <constraint firstItem="iLp-eB-dln" firstAttribute="top" secondItem="iAb-mW-RU5" secondAttribute="top" id="fTO-tG-7J8"/>
+                            <constraint firstItem="iAb-mW-RU5" firstAttribute="trailing" secondItem="iLp-eB-dln" secondAttribute="trailing" id="oSW-o9-sG1"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1U9-Ja-JVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7y-GV-PvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-759.20000000000005" y="392.65367316341832"/>
+            <point key="canvasLocation" x="-674.39999999999998" y="392.65367316341832"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YHV-24-Xxr">
@@ -252,6 +276,9 @@
         <image name="greaterthan.circle.fill" catalog="system" width="128" height="121"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="p.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

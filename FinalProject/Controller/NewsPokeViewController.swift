@@ -11,6 +11,7 @@ import WebKit
 
 class NewsPokeViewController: UIViewController {
     
+    //pokeItem Model Class
     var pokeItems: [PokeItem] = []
 
     @IBOutlet weak var pokeNewsTableView: UITableView!
@@ -25,7 +26,7 @@ class NewsPokeViewController: UIViewController {
         handleGetData()
 
     }
-    
+    //logic of activity indicator
     func activityIndicator(animated: Bool){
         DispatchQueue.main.async {
             if animated{
@@ -38,10 +39,10 @@ class NewsPokeViewController: UIViewController {
         }
         
     }
-    
+    //Simple alert Item Bar Button
     @IBAction func infoBarItem(_ sender: Any) {
         //put here created alert extension
-        
+
         basicAlert(title: "Pokemon News Info", message: "Press (>) to get Pokemon latest News")
     }
     
@@ -55,7 +56,7 @@ class NewsPokeViewController: UIViewController {
     
     func handleGetData(){
         let jsonUrl = "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-07-21&sortBy=publishedAt"
-        
+        //check if url is valid, if not -> just return
         guard let url = URL(string: jsonUrl) else {return}
         
         var urlRequest = URLRequest(url: url)
@@ -64,11 +65,13 @@ class NewsPokeViewController: UIViewController {
         
         let sessionUrl = URLSession(configuration: .default)
         let task = sessionUrl.dataTask(with: urlRequest) { data, response, err in
+            //first response from url
             print("response:", response as Any)
             
             if let err = err {
                 self.basicAlert(title: "Error!", message: "\(err.localizedDescription)")
             }
+            //data from sessionUrl.dataTask
             guard let data = data else {
                 
                 self.basicAlert(title: "Error!", message: "Something went wrong, no data")
@@ -106,8 +109,11 @@ class NewsPokeViewController: UIViewController {
     }
 }
 
+//extension to present the data and pass it by clicking to another VC
+
 extension NewsPokeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //var pokeItems assigned above
         return pokeItems.count
     }
     

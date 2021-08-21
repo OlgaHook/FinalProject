@@ -5,7 +5,9 @@
 //  Created by olga.krjuckova on 20/08/2021.
 //
 
+//Here are specifis String var, that we gonna get from internet and present on TableView
 import UIKit
+//Gloss helps to JSON datain easier/faster way (added in Final project ->Swift Packages)
 import Gloss
 
 class PokeItem: JSONDecodable {
@@ -14,9 +16,10 @@ class PokeItem: JSONDecodable {
     var pokeTitle: String
     var pokeUrl: String
     var pokeUrlToImage: String
+    //poke image created to save in CoreData
     var pokeImage: UIImage?
     
-    
+    //accesing JSON from GET request, by specific key -> String. Using some keys from Array of articles
     required init?(json: JSON) {
         //if description is not a String, well present ""
         self.pokeDescription = "description" <~~ json ?? ""
@@ -33,10 +36,10 @@ class PokeItem: JSONDecodable {
         
     }
     
-    //restricted area-> visible here only
+    //Image controller,restricted area-> visible here only
     private func loadImage() -> UIImage?{
         var returnPokeImage: UIImage?
-        
+        //check if url is valid to get image from url
         guard let url = URL(string: pokeUrlToImage) else {
             return returnPokeImage
         }
