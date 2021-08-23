@@ -136,7 +136,6 @@ extension NewsPokeViewController: UITableViewDelegate, UITableViewDataSource{
             
         }
         
-        
         return cell
     }
     

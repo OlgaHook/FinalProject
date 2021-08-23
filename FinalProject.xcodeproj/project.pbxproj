@@ -21,6 +21,7 @@
 		B46CFABF26D2586D009E928F /* DetailPokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFABE26D2586D009E928F /* DetailPokeViewController.swift */; };
 		B46CFAC126D2BA22009E928F /* WebPokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */; };
 		B46CFAC326D3480A009E928F /* SavedPokeNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */; };
+		B46CFAF726D405A7009E928F /* PokeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAF626D405A7009E928F /* PokeImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B46CFABE26D2586D009E928F /* DetailPokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokeViewController.swift; sourceTree = "<group>"; };
 		B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPokeViewController.swift; sourceTree = "<group>"; };
 		B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPokeNewsTableViewController.swift; sourceTree = "<group>"; };
+		B46CFAF626D405A7009E928F /* PokeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +98,8 @@
 		B46CFA6B26CFD819009E928F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B46CFA5726CFD7F2009E928F /* NewsPokeViewController.swift */,
-				B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */,
-				B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */,
-				B46CFA7626CFFA9C009E928F /* PokeNewsTableViewCell.swift */,
-				B46CFABE26D2586D009E928F /* DetailPokeViewController.swift */,
+				B46CFAF626D405A7009E928F /* PokeImageViewController.swift */,
+				B46CFAEC26D3DF2B009E928F /* PokeNewsController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +127,18 @@
 				B46CFA7926CFFDF2009E928F /* PokeItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B46CFAEC26D3DF2B009E928F /* PokeNewsController */ = {
+			isa = PBXGroup;
+			children = (
+				B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */,
+				B46CFA7626CFFA9C009E928F /* PokeNewsTableViewCell.swift */,
+				B46CFABE26D2586D009E928F /* DetailPokeViewController.swift */,
+				B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */,
+				B46CFA5726CFD7F2009E928F /* NewsPokeViewController.swift */,
+			);
+			path = PokeNewsController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				B46CFA7526CFDB5D009E928F /* Alert.swift in Sources */,
 				B46CFAC126D2BA22009E928F /* WebPokeViewController.swift in Sources */,
 				B46CFA7A26CFFDF2009E928F /* PokeItem.swift in Sources */,
+				B46CFAF726D405A7009E928F /* PokeImageViewController.swift in Sources */,
 				B46CFA5626CFD7F2009E928F /* SceneDelegate.swift in Sources */,
 				B46CFA7726CFFA9C009E928F /* PokeNewsTableViewCell.swift in Sources */,
 			);
