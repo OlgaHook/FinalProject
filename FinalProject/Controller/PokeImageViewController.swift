@@ -19,7 +19,11 @@ class PokeImageViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var findButton: UIButton!
     
+    @IBOutlet weak var pokeImageLabel: UIImageView!
     
+    var pokeDataModel = PokeImageModel()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,7 +42,7 @@ class PokeImageViewController: UIViewController {
              */
             warningPopUp(withTitle: "Input error", withMessage: "Date Text Fields Can't be Empty.")
             return
-            
+                self.updateUI()
         }
         /* dateComponents.day = String(dayTextField.text)
  Not safe to cast! Use guard.
@@ -78,7 +82,7 @@ class PokeImageViewController: UIViewController {
         dayTextField.text = ""
         monthsTexField.text = ""
         yearTextField.text = ""
-        resultLabel.text = "Day Of The Week Inside Your Finder"
+        resultLabel.text = "Enter Date Inside Your Finder"
         
     }
     
@@ -102,24 +106,28 @@ class PokeImageViewController: UIViewController {
         }
     
     }
-    
-
-    // MARK: - Navigation
-/*
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "DayFinder"{
-        // Get the new view controller using segue.destination.
+   /*
+    //populating data
+    func updateImageData(){
+        if let dayResult = String?{
+            pokeDataModel.im = Int(tempResult - 273)
             
-            let viewController = segue.destination as! InfoViewController
+            //condition update for weather icon. 0 means - inside first array
+            pokeDataModel.condition = String([0])
+            pokeDataModel.pokeIconName = pokeDataModel.updatePokeIcon(condition: pokeDataModel.condition)
+            updateUI()
             
-            
-            // Pass the selected object to the new view controller.
-            viewController.infoText = "DayFinder app helps You\nto find day of week for\ngiven date"
-        
+        }else{
+            //cntr +cmd + space -> to add emoji
+            self.resultLabel.text = "Day is unavaliable 🤨"
         }
+    }
+       */
+    //presenting populated (updateWeatherData) data
+    func updateUI(){
+        pokeImageLabel.image = UIImage(named: pokeDataModel.pokeIconName)
         
-}
-    */
+        
+    }
+   
 }

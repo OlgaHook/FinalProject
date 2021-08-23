@@ -22,6 +22,7 @@
 		B46CFAC126D2BA22009E928F /* WebPokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */; };
 		B46CFAC326D3480A009E928F /* SavedPokeNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */; };
 		B46CFAF726D405A7009E928F /* PokeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAF626D405A7009E928F /* PokeImageViewController.swift */; };
+		B46CFAFB26D40877009E928F /* PokeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAFA26D40877009E928F /* PokeImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPokeViewController.swift; sourceTree = "<group>"; };
 		B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPokeNewsTableViewController.swift; sourceTree = "<group>"; };
 		B46CFAF626D405A7009E928F /* PokeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeImageViewController.swift; sourceTree = "<group>"; };
+		B46CFAFA26D40877009E928F /* PokeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B46CFA7926CFFDF2009E928F /* PokeItem.swift */,
+				B46CFAFA26D40877009E928F /* PokeImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				B46CFA5426CFD7F2009E928F /* AppDelegate.swift in Sources */,
 				B46CFABF26D2586D009E928F /* DetailPokeViewController.swift in Sources */,
 				B46CFA5E26CFD7F2009E928F /* FinalProject.xcdatamodeld in Sources */,
+				B46CFAFB26D40877009E928F /* PokeImage.swift in Sources */,
 				B46CFAC326D3480A009E928F /* SavedPokeNewsTableViewController.swift in Sources */,
 				B46CFA7526CFDB5D009E928F /* Alert.swift in Sources */,
 				B46CFAC126D2BA22009E928F /* WebPokeViewController.swift in Sources */,

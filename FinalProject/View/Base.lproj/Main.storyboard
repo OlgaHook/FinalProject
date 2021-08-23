@@ -61,8 +61,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="3CO-3c-v56" firstAttribute="centerY" secondItem="WYC-ka-NBE" secondAttribute="centerY" id="di1-9J-6XU"/>
                                                 <constraint firstItem="3CO-3c-v56" firstAttribute="centerY" secondItem="WYC-ka-NBE" secondAttribute="centerY" id="jf8-vA-t3B"/>
                                                 <constraint firstItem="3CO-3c-v56" firstAttribute="centerX" secondItem="WYC-ka-NBE" secondAttribute="centerX" id="s0k-PL-zUG"/>
+                                                <constraint firstItem="3CO-3c-v56" firstAttribute="centerX" secondItem="WYC-ka-NBE" secondAttribute="centerX" id="x8Z-hb-bfB"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -431,8 +433,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4mb-tU-JIG">
                                                 <rect key="frame" x="0.0" y="0.0" width="69" height="118"/>
                                                 <subviews>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-NE-Aax">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-NE-Aax">
                                                         <rect key="frame" x="0.0" y="0.0" width="69" height="34"/>
+                                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="feF-ze-Uhl"/>
                                                             <constraint firstAttribute="height" constant="34" id="pDy-ee-i2g"/>
@@ -440,9 +443,15 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaR-As-59B">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaR-As-59B">
                                                         <rect key="frame" x="0.0" y="42" width="69" height="34"/>
+                                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="M80-hn-tPU"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="PZu-8e-WsD"/>
@@ -450,9 +459,15 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-oJ-2gN">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-oJ-2gN">
                                                         <rect key="frame" x="0.0" y="84" width="69" height="34"/>
+                                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="NgS-uQ-PGA"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="bX9-xp-2YC"/>
@@ -460,6 +475,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                 </subviews>
                                             </stackView>
@@ -468,30 +488,48 @@
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zeZ-mx-nRl">
                                                         <rect key="frame" x="0.0" y="0.0" width="209" height="34"/>
+                                                        <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="9Ox-41-uLl"/>
                                                             <constraint firstAttribute="width" constant="209" id="T87-Ln-ETf"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="szq-bb-svq">
                                                         <rect key="frame" x="0.0" y="42" width="209" height="34"/>
+                                                        <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="G5Q-Yf-2EB"/>
                                                             <constraint firstAttribute="width" constant="209" id="oPT-4m-SWg"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtH-3I-jc1">
                                                         <rect key="frame" x="0.0" y="84" width="209" height="34"/>
+                                                        <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="FrR-27-Cgv"/>
                                                             <constraint firstAttribute="width" constant="209" id="X9F-sF-ckd"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -502,17 +540,26 @@
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-T0-ONd">
                                                 <rect key="frame" x="48" y="0.0" width="144" height="30"/>
+                                                <color key="backgroundColor" red="0.50818499640000003" green="0.58533770200000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="5sU-WT-pY7"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="VZl-SI-BwV"/>
                                                 </constraints>
-                                                <state key="normal" title="FIND"/>
+                                                <state key="normal" title="FIND">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadiuss">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="findWeekDayTapped:" destination="HLL-p8-cRf" eventType="touchUpInside" id="qlz-fF-vYN"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQv-Xo-uQD">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQv-Xo-uQD">
                                                 <rect key="frame" x="13.5" y="54" width="213" height="38"/>
+                                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="213" id="3LJ-nx-eJi"/>
                                                     <constraint firstAttribute="height" constant="38" id="c0o-1q-Nbj"/>
@@ -520,6 +567,11 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="46v-Bs-cPR">
                                                 <rect key="frame" x="0.0" y="116" width="240" height="249"/>
@@ -532,15 +584,35 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l5-a1-TuU">
+                                <rect key="frame" x="92" y="20" width="187" height="30"/>
+                                <color key="backgroundColor" red="0.50818499640000003" green="0.58533770200000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="187" id="5wA-wf-bCe"/>
+                                    <constraint firstAttribute="height" constant="30" id="tbh-87-BYo"/>
+                                </constraints>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wBp-07-eVl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wBp-07-eVl" firstAttribute="bottom" secondItem="276-K3-p5N" secondAttribute="bottom" id="Ewe-cI-BVC"/>
                             <constraint firstItem="gPV-yx-slg" firstAttribute="centerX" secondItem="aJq-Lh-ejs" secondAttribute="centerX" id="OLq-97-ohf"/>
+                            <constraint firstItem="wBp-07-eVl" firstAttribute="trailing" secondItem="2l5-a1-TuU" secondAttribute="trailing" constant="96" id="R0c-S4-Ac7"/>
                             <constraint firstItem="276-K3-p5N" firstAttribute="top" secondItem="wBp-07-eVl" secondAttribute="top" id="XUR-eg-Qcp"/>
+                            <constraint firstItem="gPV-yx-slg" firstAttribute="top" secondItem="2l5-a1-TuU" secondAttribute="bottom" constant="24" id="h8p-dW-SAs"/>
+                            <constraint firstItem="2l5-a1-TuU" firstAttribute="leading" secondItem="wBp-07-eVl" secondAttribute="leading" constant="92" id="nPh-de-X9s"/>
                             <constraint firstItem="gPV-yx-slg" firstAttribute="centerY" secondItem="aJq-Lh-ejs" secondAttribute="centerY" id="nYo-cm-EnA"/>
                             <constraint firstItem="276-K3-p5N" firstAttribute="leading" secondItem="wBp-07-eVl" secondAttribute="leading" id="qRa-WV-Gq6"/>
+                            <constraint firstItem="2l5-a1-TuU" firstAttribute="top" secondItem="wBp-07-eVl" secondAttribute="top" constant="20" id="uB0-gf-pKJ"/>
                             <constraint firstItem="wBp-07-eVl" firstAttribute="trailing" secondItem="276-K3-p5N" secondAttribute="trailing" id="xuB-83-rGO"/>
                         </constraints>
                     </view>
@@ -548,6 +620,7 @@
                         <outlet property="dayTextField" destination="zeZ-mx-nRl" id="QWF-Ht-Pf3"/>
                         <outlet property="findButton" destination="nq7-T0-ONd" id="U7G-15-Qzd"/>
                         <outlet property="monthsTexField" destination="szq-bb-svq" id="zs2-h6-153"/>
+                        <outlet property="pokeImageLabel" destination="46v-Bs-cPR" id="cwQ-NI-5JP"/>
                         <outlet property="resultLabel" destination="WQv-Xo-uQD" id="2XJ-F3-CYS"/>
                         <outlet property="yearTextField" destination="qtH-3I-jc1" id="tO6-uq-yz2"/>
                     </connections>
@@ -666,8 +739,14 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
