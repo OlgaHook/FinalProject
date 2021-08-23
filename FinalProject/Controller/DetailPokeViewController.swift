@@ -39,6 +39,7 @@ class DetailPokeViewController: UIViewController {
         contentPokeTextView.text = contentPokeString
         
         newsPokeImageView.image = newsPokeImage
+        
         //access AppDelegate
         //as! Appdelegate Class
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -51,5 +52,8 @@ class DetailPokeViewController: UIViewController {
     @IBAction func saveArticleButtonTapped(_ sender: Any) {
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination:WebPokeViewController = segue.destination as! WebPokeViewController
+        destination.urlPokeString = weburlPokeString
+    }
 }
