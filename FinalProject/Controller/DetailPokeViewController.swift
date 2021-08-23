@@ -46,10 +46,37 @@ class DetailPokeViewController: UIViewController {
         context = appDelegate.persistentContainer.viewContext
         
     }
-    //already have seg.
-   
     
+    func saveData(){
+        do{
+            try context?.save()
+            basicAlert(title: "Saved", message: "Go to Saved to find your article")
+        }catch{
+            print(error.localizedDescription)
+        }
+    }
+    
+
     @IBAction func saveArticleButtonTapped(_ sender: Any) {
+        
+        // new PokeItem ->  Core data
+        let newPokeItem = PokeItems(context: self.context!)
+        newPokeItem.newsTitle = titlePokeString
+        newPokeItem.newsContent = contentPokeString
+        newPokeItem.pokeUrl = weburlPokeString
+        
+        //save image as Binary data
+        guard let imageData: Data = newsPokeImage?.pngData() else {
+            return
+        }
+        if !imageData.isEmpty{
+            //lets access
+            newPokeItem.pokeImage = imageData
+        }
+        self.savedPokeItems.append(newPokeItem)
+        saveData()
+        
+    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -26,6 +26,8 @@ class NewsPokeViewController: UIViewController {
         handleGetData()
         
     }
+    
+    
     //logic of activity indicator
     func activityIndicator(animated: Bool){
         DispatchQueue.main.async {
@@ -149,7 +151,7 @@ extension NewsPokeViewController: UITableViewDelegate, UITableViewDataSource{
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let vc = storyboard.instantiateViewController(identifier: "DetailPokeViewController")as?
                 DetailPokeViewController else {return}
-       
+        
         
         let pokeItem = pokeItems[indexPath.row]
         vc.contentPokeString = pokeItem.pokeDescription
@@ -160,7 +162,7 @@ extension NewsPokeViewController: UITableViewDelegate, UITableViewDataSource{
         navigationController?.pushViewController(vc, animated: true)
         
     }
-   
-   
+    
+    
     
 }

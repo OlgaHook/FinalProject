@@ -172,7 +172,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="FaL-Cg-bOi" kind="showDetail" id="LNS-0k-DKT"/>
+                                                    <segue destination="FaL-Cg-bOi" kind="show" id="LNS-0k-DKT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohi-wf-U4d">
@@ -220,7 +220,7 @@
         <!--Web Poke View Controller-->
         <scene sceneID="qUp-3U-ru1">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="FaL-Cg-bOi" customClass="WebPokeViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebPokeViewController" hidesBottomBarWhenPushed="YES" id="FaL-Cg-bOi" customClass="WebPokeViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ixL-zG-eMs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,6 +243,7 @@
                             <constraint firstItem="AWI-yP-yNS" firstAttribute="leading" secondItem="GVZ-wb-HZ1" secondAttribute="leading" id="mBI-BQ-rUm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lWb-Qy-x9v"/>
                     <connections>
                         <outlet property="webPokeView" destination="AWI-yP-yNS" id="mpd-wS-CL6"/>
                     </connections>
@@ -271,34 +272,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCM-D8-PO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968.79999999999995" y="72.413793103448285"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="FC0-a7-fCq">
-            <objects>
-                <viewController id="AAO-qN-bxj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e3t-Sf-yar">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u91-Wr-Xzi">
-                                <rect key="frame" x="0.0" y="56" width="375" height="542"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="53U-YW-eRU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="53U-YW-eRU" firstAttribute="bottom" secondItem="u91-Wr-Xzi" secondAttribute="bottom" id="7bx-UD-S6L"/>
-                            <constraint firstItem="u91-Wr-Xzi" firstAttribute="leading" secondItem="53U-YW-eRU" secondAttribute="leading" id="8PJ-zf-4aJ"/>
-                            <constraint firstItem="53U-YW-eRU" firstAttribute="trailing" secondItem="u91-Wr-Xzi" secondAttribute="trailing" id="FgP-Ve-lmg"/>
-                            <constraint firstItem="u91-Wr-Xzi" firstAttribute="top" secondItem="53U-YW-eRU" secondAttribute="top" id="tFJ-tS-t2C"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="QiJ-Hh-DRc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UOk-tT-CJZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1804" y="797"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rMN-JH-ZZD">
@@ -404,12 +377,89 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="AAO-qN-bxj" kind="relationship" relationship="rootViewController" id="KbG-Uz-L4R"/>
+                        <segue destination="PCJ-C5-u3h" kind="relationship" relationship="rootViewController" id="NDa-rO-H2m"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x9A-ZM-VRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969" y="798"/>
+        </scene>
+        <!--Saved Poke News Table View Controller-->
+        <scene sceneID="Pes-cF-L6d">
+            <objects>
+                <tableViewController id="PCJ-C5-u3h" customClass="SavedPokeNewsTableViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lk0-oj-u65">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="savedPokeData" rowHeight="197" id="qLy-tA-iuT" customClass="PokeNewsTableViewCell" customModule="FinalProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="197"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qLy-tA-iuT" id="6So-sA-PQX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="197"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vzb-iJ-U02">
+                                            <rect key="frame" x="16" y="25" width="343" height="147"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq7-lw-9qH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="168" height="147"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="147" id="BxA-J7-PrE"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="168" id="vfw-P5-1fg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-hH-8Rb">
+                                                    <rect key="frame" x="176" y="0.0" width="167" height="147"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="167" id="F6r-nc-rjf"/>
+                                                        <constraint firstAttribute="height" constant="147" id="gvq-F9-64O"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vzb-iJ-U02" firstAttribute="centerY" secondItem="6So-sA-PQX" secondAttribute="centerY" id="sZG-Ld-bv8"/>
+                                        <constraint firstItem="Vzb-iJ-U02" firstAttribute="centerX" secondItem="6So-sA-PQX" secondAttribute="centerX" id="tm8-eg-EiY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pokeNewsImage" destination="8OX-hH-8Rb" id="Wsg-Rw-shW"/>
+                                    <outlet property="pokeNewsLabel" destination="rq7-lw-9qH" id="9xa-R9-abp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PCJ-C5-u3h" id="oCL-Yb-d3e"/>
+                            <outlet property="delegate" destination="PCJ-C5-u3h" id="zbB-gZ-7k6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3XC-aD-WJd">
+                        <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="tfQ-YK-Pc7">
+                            <color key="tintColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="savedInfoButtonTapped:" destination="PCJ-C5-u3h" id="KNz-t8-o51"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="85G-Ca-gj4">
+                            <color key="tintColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveEditButtonTapped:" destination="PCJ-C5-u3h" id="J4V-z9-uv2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editButtonTitle" destination="85G-Ca-gj4" id="UHM-kJ-thK"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbh-pR-X0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="796.55172413793105"/>
         </scene>
     </scenes>
     <resources>
