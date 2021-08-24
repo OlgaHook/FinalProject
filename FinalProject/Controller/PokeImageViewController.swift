@@ -10,8 +10,9 @@ import UIKit
 class PokeImageViewController: UIViewController {
 
     
+    @IBOutlet var styleButtonOutletCollection: [UIButton]!
     
-    
+    @IBOutlet var styleLabelOutletCollection: [UILabel]!
     
     @IBOutlet weak var dayTextField: UITextField!
     @IBOutlet weak var monthsTexField: UITextField!
@@ -20,19 +21,47 @@ class PokeImageViewController: UIViewController {
     @IBOutlet weak var findButton: UIButton!
     
     @IBOutlet weak var pokeImageLabel: UIImageView!
-    
     var pokeDataModel = PokeImageModel()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        styleButtonOutletCollection.forEach { button in
+            button.layer.cornerRadius = 10
+            button.layer.borderColor = UIColor.black.cgColor
+            button.layer.borderWidth = 1
+        }
+      
+        styleLabelOutletCollection.forEach { label in
+            label.layer.cornerRadius = 10
+            label.layer.borderWidth = 1
+            label.layer.borderColor = UIColor.black.cgColor
+        }
     }
 
+    @IBAction func openSettingsButtonTapped(_ sender: Any) {
+        openSettings()
+    }
+    
+    func openSettings() {
+        guard let settingURL = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(settingURL){
+            
+            UIApplication.shared.open(settingURL, options: [:]) { success in
+                print("success :", success)
+            }
+        }
+    
+    }
+    
+    
     @IBAction func findWeekDayTapped(_ sender: Any) {
         
         let calendar = Calendar.current
-        
         var dateComponents = DateComponents()
         
         guard let day = Int(dayTextField.text!), let month = Int(monthsTexField.text!), let year = Int(yearTextField.text!) else {
