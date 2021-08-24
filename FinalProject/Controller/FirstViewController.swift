@@ -31,8 +31,8 @@ class FirstViewController: UIViewController {
             button.layer.borderColor = UIColor.black.cgColor
         }
         welcomeLabel.text = "Welcome to final project"
-        pokeNewsLabel.text = "Press to Get Pokemon World News"
-        pokeDayFinderLabel.text = "Press to find a week Day"
+        pokeNewsLabel.text = "Pokemon World News"
+        pokeDayFinderLabel.text = "Find a week Day"
     }
     
 

@@ -286,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-Zd-OQW">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-RN-CNl">
                                 <rect key="frame" x="39.5" y="388.5" width="335" height="119"/>
@@ -364,9 +364,9 @@
                             <constraint firstItem="1Ns-Be-EkA" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="83" id="3yW-Nr-slb"/>
                             <constraint firstItem="1ag-RN-CNl" firstAttribute="centerX" secondItem="8be-Yt-uXv" secondAttribute="centerX" id="5bt-e8-wTm"/>
                             <constraint firstItem="zaY-Zd-OQW" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" id="E0D-ZI-40T"/>
-                            <constraint firstItem="zaY-Zd-OQW" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" id="FyL-bI-Swt"/>
+                            <constraint firstItem="zaY-Zd-OQW" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="-44" id="FyL-bI-Swt"/>
                             <constraint firstItem="1ag-RN-CNl" firstAttribute="top" secondItem="1Ns-Be-EkA" secondAttribute="bottom" constant="173.5" id="Mpg-n2-vmi"/>
-                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="zaY-Zd-OQW" secondAttribute="bottom" id="QWg-BA-aX0"/>
+                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="zaY-Zd-OQW" secondAttribute="bottom" constant="-34" id="QWg-BA-aX0"/>
                             <constraint firstItem="1Ns-Be-EkA" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="81" id="RaB-aL-4pL"/>
                             <constraint firstItem="1ag-RN-CNl" firstAttribute="centerY" secondItem="8be-Yt-uXv" secondAttribute="centerY" id="WJc-r3-aZd"/>
                             <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="zaY-Zd-OQW" secondAttribute="trailing" id="iuB-W5-fmE"/>
