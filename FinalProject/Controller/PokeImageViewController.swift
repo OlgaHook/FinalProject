@@ -22,12 +22,13 @@ class PokeImageViewController: UIViewController {
     
     @IBOutlet weak var pokeImageLabel: UIImageView!
     var pokeDataModel = PokeImageModel()
-
+    var image = UIImage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //to get pokey of the day image
-        self.updateUI()
+        self.updateImage()
+        
         
     
         styleButtonOutletCollection.forEach { button in
@@ -74,7 +75,7 @@ class PokeImageViewController: UIViewController {
              */
             warningPopUp(withTitle: "Input error", withMessage: "Date Text Fields Can't be Empty.")
             return
-                self.updateUI()
+                
         }
         /* dateComponents.day = String(dayTextField.text)
  Not safe to cast! Use guard.
@@ -140,9 +141,8 @@ class PokeImageViewController: UIViewController {
     }
    
     //presenting populated (updateWeatherData) data
-    func updateUI(){
+    func updateImage(){
         pokeImageLabel.image = UIImage(named: pokeDataModel.pokeIconName)
-        
     }
-   
+    
 }

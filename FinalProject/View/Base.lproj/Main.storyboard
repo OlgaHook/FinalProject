@@ -215,6 +215,8 @@
                         <outlet property="newsPokeImageView" destination="5sC-mw-1hW" id="TQY-vh-cpW"/>
                         <outlet property="saveArticleButton" destination="Ohi-wf-U4d" id="mYf-FG-KKe"/>
                         <outlet property="titleLabelPoke" destination="vdW-vA-J3c" id="Nzi-X1-aDX"/>
+                        <outletCollection property="buttonOutletCollection" destination="qfs-Kw-kcS" collectionClass="NSMutableArray" id="a6i-6y-qdg"/>
+                        <outletCollection property="buttonOutletCollection" destination="Ohi-wf-U4d" collectionClass="NSMutableArray" id="wk0-Ya-RYE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdZ-BR-Ayh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -294,7 +296,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="SOW-LH-iqh">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="119"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kF-3q-wIa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kF-3q-wIa">
                                                 <rect key="frame" x="0.0" y="0.0" width="260" height="51"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="Ciw-Yo-SBj"/>
@@ -304,7 +306,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-BV-OsQ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-BV-OsQ">
                                                 <rect key="frame" x="0.0" y="69" width="260" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Cha-4i-evh"/>
@@ -327,7 +329,7 @@
                                                 </constraints>
                                                 <state key="normal" image="PokeBall"/>
                                                 <connections>
-                                                    <segue destination="5K4-la-YT3" kind="showDetail" id="xvw-3g-n3c"/>
+                                                    <segue destination="5K4-la-YT3" kind="showDetail" id="A66-Lb-vjc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDr-gZ-p8L">
@@ -338,7 +340,7 @@
                                                 </constraints>
                                                 <state key="normal" image="Owl"/>
                                                 <connections>
-                                                    <segue destination="Nlm-EZ-SSY" kind="showDetail" id="bKr-tp-Qii"/>
+                                                    <segue destination="Nlm-EZ-SSY" kind="showDetail" id="MD2-Pg-X3o"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -357,14 +359,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lh-0n-2fq">
+                                <rect key="frame" x="39" y="44" width="50" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5ZD-76-ku5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="FYm-sh-NwU"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="info.circle.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonTapped:" destination="WMz-NA-826" eventType="touchUpInside" id="bOJ-yq-iau"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lVZ-yd-DD7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="0lh-0n-2fq" secondAttribute="trailing" constant="325" id="0j6-mK-TJ3"/>
+                            <constraint firstItem="0lh-0n-2fq" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" id="3Ye-SW-3M3"/>
                             <constraint firstItem="1Ns-Be-EkA" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="83" id="3yW-Nr-slb"/>
                             <constraint firstItem="1ag-RN-CNl" firstAttribute="centerX" secondItem="8be-Yt-uXv" secondAttribute="centerX" id="5bt-e8-wTm"/>
                             <constraint firstItem="zaY-Zd-OQW" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" id="E0D-ZI-40T"/>
                             <constraint firstItem="zaY-Zd-OQW" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="-44" id="FyL-bI-Swt"/>
+                            <constraint firstItem="0lh-0n-2fq" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="39" id="M6m-cb-QTR"/>
                             <constraint firstItem="1ag-RN-CNl" firstAttribute="top" secondItem="1Ns-Be-EkA" secondAttribute="bottom" constant="173.5" id="Mpg-n2-vmi"/>
                             <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="zaY-Zd-OQW" secondAttribute="bottom" constant="-34" id="QWg-BA-aX0"/>
                             <constraint firstItem="1Ns-Be-EkA" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="81" id="RaB-aL-4pL"/>
@@ -374,6 +393,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="infoButton" destination="0lh-0n-2fq" id="4Mi-wD-sgl"/>
                         <outlet property="pokeDayFinderLabel" destination="pGi-BV-OsQ" id="e0K-mV-ff4"/>
                         <outlet property="pokeNewsLabel" destination="9kF-3q-wIa" id="aHO-a9-ZsS"/>
                         <outlet property="welcomeLabel" destination="1Ns-Be-EkA" id="1Kf-Bo-Pg7"/>
@@ -382,11 +402,12 @@
                         <outletCollection property="styleButtonOutletCollection" destination="4Xu-5S-WdL" collectionClass="NSMutableArray" id="Q5N-2x-BwH"/>
                         <outletCollection property="styleButtonOutletCollection" destination="EDr-gZ-p8L" collectionClass="NSMutableArray" id="QL6-3z-SIQ"/>
                         <outletCollection property="styleLabelOutletCollection" destination="1Ns-Be-EkA" collectionClass="NSMutableArray" id="M3N-gH-eXh"/>
+                        <outletCollection property="styleButtonOutletCollection" destination="0lh-0n-2fq" collectionClass="NSMutableArray" id="mji-UF-cP0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDq-L9-DXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182.60869565217394" y="391.74107142857139"/>
+            <point key="canvasLocation" x="-257" y="392"/>
         </scene>
         <!--Poke Image View Controller-->
         <scene sceneID="bzE-HA-mC9">
@@ -513,7 +534,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rowlet" translatesAutoresizingMaskIntoConstraints="NO" id="79y-qe-Ovc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl" translatesAutoresizingMaskIntoConstraints="NO" id="79y-qe-Ovc">
                                         <rect key="frame" x="7.5" y="332" width="260" height="280"/>
                                         <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                                         <constraints>
@@ -682,7 +703,6 @@
         <image name="3" width="1000" height="1500"/>
         <image name="Owl" width="676" height="916"/>
         <image name="PokeBall" width="225" height="225"/>
-        <image name="Rowlet" width="488" height="494"/>
         <image name="circle.fill.square.fill" catalog="system" width="128" height="114"/>
         <image name="greaterthan.circle.fill" catalog="system" width="128" height="121"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>

@@ -11,6 +11,10 @@ import CoreData
 
 class DetailPokeViewController: UIViewController {
     
+    
+    @IBOutlet var buttonOutletCollection: [UIButton]!
+    
+    
     //saved Poke items of previously assigned PokeItemS in ENTITY Class
     var savedPokeItems = [PokeItems]()
     //created to help acces AppDelegate
@@ -34,6 +38,12 @@ class DetailPokeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buttonOutletCollection.forEach { button in
+            button.layer.cornerRadius = 10
+            button.layer.borderColor = UIColor.black.cgColor
+            button.layer.borderWidth = 1
+        }
         
         titleLabelPoke.text = titlePokeString
         contentPokeTextView.text = contentPokeString
