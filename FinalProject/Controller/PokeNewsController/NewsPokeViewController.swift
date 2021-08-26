@@ -57,7 +57,7 @@ class NewsPokeViewController: UIViewController {
     }
     
     func handleGetData(){
-        let jsonUrl = "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-07-30&sortBy=publishedAt"
+        let jsonUrl = "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-08-20&sortBy=publishedAt"
         //check if url is valid, if not -> just return
         guard let url = URL(string: jsonUrl) else {return}
         

@@ -136,7 +136,7 @@ class SavedPokeNewsTableViewController: UITableViewController {
         }
         self.title = "Saved"
         vc.urlPokeString = self.savedPokeItems[indexPath.row].pokeUrl ??
-            "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-07-30&sortBy=publishedAt"
+            "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-08-20&sortBy=publishedAt"
         navigationController?.pushViewController(vc, animated: true)
         
         
