@@ -26,7 +26,10 @@ class PokeImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //to get pokey of the day image
+        self.updateUI()
         
+    
         styleButtonOutletCollection.forEach { button in
             button.layer.cornerRadius = 10
             button.layer.borderColor = UIColor.black.cgColor
@@ -135,27 +138,10 @@ class PokeImageViewController: UIViewController {
         }
     
     }
-   /*
-    //populating data
-    func updateImageData(){
-        if let dayResult = String?{
-            pokeDataModel.im = Int(tempResult - 273)
-            
-            //condition update for weather icon. 0 means - inside first array
-            pokeDataModel.condition = String([0])
-            pokeDataModel.pokeIconName = pokeDataModel.updatePokeIcon(condition: pokeDataModel.condition)
-            updateUI()
-            
-        }else{
-            //cntr +cmd + space -> to add emoji
-            self.resultLabel.text = "Day is unavaliable 🤨"
-        }
-    }
-       */
+   
     //presenting populated (updateWeatherData) data
     func updateUI(){
         pokeImageLabel.image = UIImage(named: pokeDataModel.pokeIconName)
-        
         
     }
    
