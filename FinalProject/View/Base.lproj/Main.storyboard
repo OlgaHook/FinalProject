@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2743.1999999999998" y="71.514242878560722"/>
+            <point key="canvasLocation" x="3652.1739130434785" y="70.982142857142847"/>
         </scene>
         <!--Detail Poke View Controller-->
         <scene sceneID="ePX-Gf-6u2">
@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdZ-BR-Ayh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3484" y="71.514242878560722"/>
+            <point key="canvasLocation" x="4392.753623188406" y="70.982142857142847"/>
         </scene>
         <!--Web Poke View Controller-->
         <scene sceneID="qUp-3U-ru1">
@@ -256,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGb-17-xGv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4192.8000000000002" y="71.514242878560722"/>
+            <point key="canvasLocation" x="5102.898550724638" y="70.982142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nh4-qw-5Oq">
@@ -277,7 +277,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCM-D8-PO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="72.413793103448285"/>
+            <point key="canvasLocation" x="2817.3913043478265" y="72.321428571428569"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="K8M-td-0ws">
@@ -328,6 +328,11 @@
                                                     <constraint firstAttribute="width" constant="50" id="MxC-WJ-NiV"/>
                                                 </constraints>
                                                 <state key="normal" image="PokeBall"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="5K4-la-YT3" kind="showDetail" id="A66-Lb-vjc"/>
                                                 </connections>
@@ -339,6 +344,11 @@
                                                     <constraint firstAttribute="width" constant="50" id="U1A-l5-u68"/>
                                                 </constraints>
                                                 <state key="normal" image="Owl"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="Nlm-EZ-SSY" kind="showDetail" id="MD2-Pg-X3o"/>
                                                 </connections>
@@ -407,12 +417,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDq-L9-DXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-257" y="392"/>
+            <point key="canvasLocation" x="86.956521739130437" y="391.74107142857139"/>
         </scene>
-        <!--Poke Image View Controller-->
+        <!--Find Week Day View Controller-->
         <scene sceneID="bzE-HA-mC9">
             <objects>
-                <viewController id="Nlm-EZ-SSY" customClass="PokeImageViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nlm-EZ-SSY" customClass="FindWeekDayViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hb7-M0-LdY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,7 +431,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ClW-fJ-vWl">
-                                <rect key="frame" x="69.5" y="115" width="275" height="612"/>
+                                <rect key="frame" x="69.5" y="268" width="275" height="306"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfQ-Qj-BZ3">
                                         <rect key="frame" x="47.5" y="0.0" width="180" height="34"/>
@@ -534,14 +544,6 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl" translatesAutoresizingMaskIntoConstraints="NO" id="79y-qe-Ovc">
-                                        <rect key="frame" x="7.5" y="332" width="260" height="280"/>
-                                        <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="O1p-i8-Xw1"/>
-                                            <constraint firstAttribute="width" constant="260" id="xLL-hV-dEJ"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -561,7 +563,6 @@
                         <outlet property="dayTextField" destination="Klp-Qn-0p4" id="NHU-p3-gEZ"/>
                         <outlet property="findButton" destination="QTB-eP-Tiy" id="Iq4-8Q-AO8"/>
                         <outlet property="monthsTexField" destination="dLz-CD-sPb" id="fj1-zy-CZV"/>
-                        <outlet property="pokeImageLabel" destination="79y-qe-Ovc" id="jZ8-1z-E6E"/>
                         <outlet property="resultLabel" destination="4X5-nl-uky" id="xKr-a0-DFz"/>
                         <outlet property="yearTextField" destination="O3J-Se-dCb" id="jmD-Pm-oW6"/>
                         <outletCollection property="styleButtonOutletCollection" destination="sfQ-Qj-BZ3" collectionClass="NSMutableArray" id="Oqp-X1-WKh"/>
@@ -574,7 +575,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VP3-nW-52q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418.84057971014494" y="1083.4821428571429"/>
+            <point key="canvasLocation" x="981" y="1145"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YHV-24-Xxr">
@@ -709,9 +710,6 @@
         <image name="p.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="quaternarySystemFillColor">
-            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

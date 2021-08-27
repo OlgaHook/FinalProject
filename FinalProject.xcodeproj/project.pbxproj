@@ -21,8 +21,7 @@
 		B46CFABF26D2586D009E928F /* DetailPokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFABE26D2586D009E928F /* DetailPokeViewController.swift */; };
 		B46CFAC126D2BA22009E928F /* WebPokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */; };
 		B46CFAC326D3480A009E928F /* SavedPokeNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */; };
-		B46CFAF726D405A7009E928F /* PokeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAF626D405A7009E928F /* PokeImageViewController.swift */; };
-		B46CFAFB26D40877009E928F /* PokeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAFA26D40877009E928F /* PokeImage.swift */; };
+		B46CFAF726D405A7009E928F /* FindWeekDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CFAF626D405A7009E928F /* FindWeekDayViewController.swift */; };
 		B4768EAA26D49C6100C7D57A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4768EA926D49C6100C7D57A /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +41,7 @@
 		B46CFABE26D2586D009E928F /* DetailPokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokeViewController.swift; sourceTree = "<group>"; };
 		B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPokeViewController.swift; sourceTree = "<group>"; };
 		B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPokeNewsTableViewController.swift; sourceTree = "<group>"; };
-		B46CFAF626D405A7009E928F /* PokeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeImageViewController.swift; sourceTree = "<group>"; };
-		B46CFAFA26D40877009E928F /* PokeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeImage.swift; sourceTree = "<group>"; };
+		B46CFAF626D405A7009E928F /* FindWeekDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWeekDayViewController.swift; sourceTree = "<group>"; };
 		B4768EA926D49C6100C7D57A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +76,8 @@
 		B46CFA5226CFD7F2009E928F /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				B46CFA7326CFDB49009E928F /* Extension */,
 				B46CFA6A26CFD80B009E928F /* AppDelegate */,
+				B46CFA7326CFDB49009E928F /* Extension */,
 				B46CFA7826CFFDAE009E928F /* Model */,
 				B46CFA6C26CFD82B009E928F /* View */,
 				B46CFA6B26CFD819009E928F /* Controller */,
@@ -102,7 +100,7 @@
 		B46CFA6B26CFD819009E928F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B46CFAF626D405A7009E928F /* PokeImageViewController.swift */,
+				B46CFAF626D405A7009E928F /* FindWeekDayViewController.swift */,
 				B4768EA926D49C6100C7D57A /* FirstViewController.swift */,
 				B46CFAEC26D3DF2B009E928F /* PokeNewsController */,
 			);
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				B46CFA7926CFFDF2009E928F /* PokeItem.swift */,
-				B46CFAFA26D40877009E928F /* PokeImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,13 +224,12 @@
 				B46CFA5426CFD7F2009E928F /* AppDelegate.swift in Sources */,
 				B46CFABF26D2586D009E928F /* DetailPokeViewController.swift in Sources */,
 				B46CFA5E26CFD7F2009E928F /* FinalProject.xcdatamodeld in Sources */,
-				B46CFAFB26D40877009E928F /* PokeImage.swift in Sources */,
 				B4768EAA26D49C6100C7D57A /* FirstViewController.swift in Sources */,
 				B46CFAC326D3480A009E928F /* SavedPokeNewsTableViewController.swift in Sources */,
 				B46CFA7526CFDB5D009E928F /* Alert.swift in Sources */,
 				B46CFAC126D2BA22009E928F /* WebPokeViewController.swift in Sources */,
 				B46CFA7A26CFFDF2009E928F /* PokeItem.swift in Sources */,
-				B46CFAF726D405A7009E928F /* PokeImageViewController.swift in Sources */,
+				B46CFAF726D405A7009E928F /* FindWeekDayViewController.swift in Sources */,
 				B46CFA5626CFD7F2009E928F /* SceneDelegate.swift in Sources */,
 				B46CFA7726CFFA9C009E928F /* PokeNewsTableViewCell.swift in Sources */,
 			);

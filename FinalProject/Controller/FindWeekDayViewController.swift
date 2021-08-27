@@ -1,5 +1,5 @@
 //
-//  PokeImageViewController.swift
+//  FindWeekDayViewController.swift
 //  FinalProject
 //
 //  Created by olga.krjuckova on 23/08/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PokeImageViewController: UIViewController {
+class FindWeekDayViewController: UIViewController {
 
     
     @IBOutlet var styleButtonOutletCollection: [UIButton]!
@@ -21,13 +21,12 @@ class PokeImageViewController: UIViewController {
     @IBOutlet weak var findButton: UIButton!
     
     @IBOutlet weak var pokeImageLabel: UIImageView!
-    var pokeDataModel = PokeImageModel()
-    var image = UIImage()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //to get pokey of the day image
-        self.updateImage()
+     
         
         
     
@@ -140,9 +139,5 @@ class PokeImageViewController: UIViewController {
     
     }
    
-    //presenting populated (updateWeatherData) data
-    func updateImage(){
-        pokeImageLabel.image = UIImage(named: pokeDataModel.pokeIconName)
-    }
     
 }
