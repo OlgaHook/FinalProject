@@ -29,7 +29,7 @@ class FirstViewController: UIViewController {
         }
         
         styleButtonOutletCollection.forEach { button  in
-            button.layer.cornerRadius = 10
+            button.layer.cornerRadius = 15
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.black.cgColor
             

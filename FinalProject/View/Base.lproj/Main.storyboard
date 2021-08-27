@@ -92,13 +92,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="qCg-hM-VS1">
                         <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="MdQ-4e-bHo">
-                            <color key="tintColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="infoBarItem:" destination="BYZ-38-t0r" id="dFK-1t-qnc"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="greaterthan.circle.fill" catalog="system" id="Qro-GF-kTV">
-                            <color key="tintColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="getDataTapped:" destination="BYZ-38-t0r" id="2W7-e1-8gb"/>
                             </connections>
@@ -287,7 +287,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-Zd-OQW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="024" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-Zd-OQW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-RN-CNl">
@@ -427,11 +427,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-uR-E81">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-uR-E81">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ClW-fJ-vWl">
-                                <rect key="frame" x="69.5" y="268" width="275" height="306"/>
+                                <rect key="frame" x="70" y="100" width="275" height="306"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfQ-Qj-BZ3">
                                         <rect key="frame" x="47.5" y="0.0" width="180" height="34"/>
@@ -551,7 +551,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ArD-uR-E81" firstAttribute="leading" secondItem="StW-eN-b4T" secondAttribute="leading" id="A0L-jw-3Em"/>
-                            <constraint firstItem="ClW-fJ-vWl" firstAttribute="centerY" secondItem="Hb7-M0-LdY" secondAttribute="centerY" id="Dpk-yp-oDy"/>
+                            <constraint firstItem="ClW-fJ-vWl" firstAttribute="centerY" secondItem="Hb7-M0-LdY" secondAttribute="centerY" constant="-168" id="Dpk-yp-oDy"/>
                             <constraint firstItem="ClW-fJ-vWl" firstAttribute="centerX" secondItem="Hb7-M0-LdY" secondAttribute="centerX" id="Rdr-aF-oUQ"/>
                             <constraint firstItem="ClW-fJ-vWl" firstAttribute="centerX" secondItem="Hb7-M0-LdY" secondAttribute="centerX" id="dBq-gp-GGL"/>
                             <constraint firstItem="ArD-uR-E81" firstAttribute="top" secondItem="StW-eN-b4T" secondAttribute="top" id="ej0-Yk-mfg"/>
@@ -587,7 +587,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="aYj-QC-CyH" kind="relationship" relationship="viewControllers" id="hzB-T0-4Oe"/>
@@ -678,13 +678,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="3XC-aD-WJd">
                         <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="tfQ-YK-Pc7">
-                            <color key="tintColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="savedInfoButtonTapped:" destination="PCJ-C5-u3h" id="KNz-t8-o51"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="85G-Ca-gj4">
-                            <color key="tintColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="saveEditButtonTapped:" destination="PCJ-C5-u3h" id="J4V-z9-uv2"/>
                             </connections>
@@ -700,14 +700,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="626" height="417"/>
-        <image name="3" width="1000" height="1500"/>
+        <image name="024" width="1080" height="1920"/>
         <image name="Owl" width="676" height="916"/>
         <image name="PokeBall" width="225" height="225"/>
         <image name="circle.fill.square.fill" catalog="system" width="128" height="114"/>
         <image name="greaterthan.circle.fill" catalog="system" width="128" height="121"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="p.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="search" width="152" height="331"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -716,6 +716,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

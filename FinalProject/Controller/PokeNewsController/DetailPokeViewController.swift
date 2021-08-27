@@ -43,7 +43,7 @@ class DetailPokeViewController: UIViewController {
             button.layer.cornerRadius = 10
             button.layer.borderColor = UIColor.black.cgColor
             button.layer.borderWidth = 1
-            button.layer.backgroundColor = UIColor.systemGreen.cgColor
+            button.layer.backgroundColor = UIColor.systemOrange.cgColor
             
         }
         
