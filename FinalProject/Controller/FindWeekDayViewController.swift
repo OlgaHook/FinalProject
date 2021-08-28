@@ -11,6 +11,7 @@ class FindWeekDayViewController: UIViewController {
 
     
     @IBOutlet var styleButtonOutletCollection: [UIButton]!
+    @IBOutlet var styleTexfieldCollection: [UITextField]!
     
     @IBOutlet var styleLabelOutletCollection: [UILabel]!
     
@@ -26,20 +27,29 @@ class FindWeekDayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //to get pokey of the day image
-     
+        self.title = "Day Finder"
         
+        
+        styleTexfieldCollection.forEach { textfield in
+            textfield.layer.cornerRadius = 10
+            textfield.layer.borderColor = UIColor.black.cgColor
+            textfield.layer.borderWidth = 1
+            textfield.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.7096483451, blue: 0.3958534476, alpha: 1)
+        }
         
     
         styleButtonOutletCollection.forEach { button in
             button.layer.cornerRadius = 10
             button.layer.borderColor = UIColor.black.cgColor
             button.layer.borderWidth = 1
+            button.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6168883878, blue: 0.1608045791, alpha: 1)
         }
       
         styleLabelOutletCollection.forEach { label in
             label.layer.cornerRadius = 10
             label.layer.borderWidth = 1
             label.layer.borderColor = UIColor.black.cgColor
+            label.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.7096483451, blue: 0.3958534476, alpha: 1)
         }
     }
 

@@ -321,7 +321,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="NE1-bz-HnM">
                                         <rect key="frame" x="285" y="0.0" width="50" height="119"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-5S-WdL">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-5S-WdL">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Bpu-6c-VAO"/>
@@ -337,7 +337,7 @@
                                                     <segue destination="5K4-la-YT3" kind="showDetail" id="A66-Lb-vjc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDr-gZ-p8L">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDr-gZ-p8L">
                                                 <rect key="frame" x="0.0" y="69" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="MYc-pA-MgN"/>
@@ -350,7 +350,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="Nlm-EZ-SSY" kind="showDetail" id="MD2-Pg-X3o"/>
+                                                    <segue destination="ZWM-pu-VBM" kind="presentation" id="VP1-z6-cQe"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -427,11 +427,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-uR-E81">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pika1" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-uR-E81">
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ClW-fJ-vWl">
-                                <rect key="frame" x="70" y="100" width="275" height="306"/>
+                                <rect key="frame" x="69.5" y="100" width="275" height="306"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfQ-Qj-BZ3">
                                         <rect key="frame" x="47.5" y="0.0" width="180" height="34"/>
@@ -489,7 +489,7 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Klp-Qn-0p4">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="34"/>
-                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="169" id="Mha-O4-772"/>
                                                             <constraint firstAttribute="height" constant="34" id="iED-V3-nLU"/>
@@ -499,7 +499,7 @@
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-CD-sPb">
                                                         <rect key="frame" x="0.0" y="46" width="169" height="34"/>
-                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="169" id="aGd-bH-2VX"/>
                                                             <constraint firstAttribute="height" constant="34" id="krA-ZB-Yge"/>
@@ -509,7 +509,7 @@
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3J-Se-dCb">
                                                         <rect key="frame" x="0.0" y="92" width="169" height="34"/>
-                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="169" id="AG6-wT-aQ0"/>
                                                             <constraint firstAttribute="height" constant="34" id="Na2-Te-Vh2"/>
@@ -559,6 +559,7 @@
                             <constraint firstItem="StW-eN-b4T" firstAttribute="trailing" secondItem="ArD-uR-E81" secondAttribute="trailing" id="vY7-0p-tkG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1ba-Nk-OhS"/>
                     <connections>
                         <outlet property="dayTextField" destination="Klp-Qn-0p4" id="NHU-p3-gEZ"/>
                         <outlet property="findButton" destination="QTB-eP-Tiy" id="Iq4-8Q-AO8"/>
@@ -571,11 +572,14 @@
                         <outletCollection property="styleLabelOutletCollection" destination="ZsL-BT-V8o" collectionClass="NSMutableArray" id="Sa1-yf-7vb"/>
                         <outletCollection property="styleLabelOutletCollection" destination="H9U-mm-6xW" collectionClass="NSMutableArray" id="ChI-bk-MT3"/>
                         <outletCollection property="styleLabelOutletCollection" destination="4X5-nl-uky" collectionClass="NSMutableArray" id="BOs-IP-Kuf"/>
+                        <outletCollection property="styleTexfieldCollection" destination="Klp-Qn-0p4" collectionClass="NSMutableArray" id="3Sq-Mu-i0n"/>
+                        <outletCollection property="styleTexfieldCollection" destination="dLz-CD-sPb" collectionClass="NSMutableArray" id="Wmk-gh-aPu"/>
+                        <outletCollection property="styleTexfieldCollection" destination="O3J-Se-dCb" collectionClass="NSMutableArray" id="fIU-LF-wrC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VP3-nW-52q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="1145"/>
+            <point key="canvasLocation" x="1889.8550724637682" y="1144.4196428571429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YHV-24-Xxr">
@@ -617,7 +621,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x9A-ZM-VRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="797.45127436281871"/>
+            <point key="canvasLocation" x="2817.3913043478265" y="796.875"/>
         </scene>
         <!--Saved Poke News Table View Controller-->
         <scene sceneID="Pes-cF-L6d">
@@ -696,7 +700,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbh-pR-X0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2743.1999999999998" y="796.55172413793105"/>
+            <point key="canvasLocation" x="3652.1739130434785" y="796.20535714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QHK-pM-Jn0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZWM-pu-VBM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="oqr-mQ-1Dj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r2o-5o-k5L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nlm-EZ-SSY" kind="relationship" relationship="rootViewController" id="xMd-un-xcM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1f-2K-DEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="1144.4196428571429"/>
         </scene>
     </scenes>
     <resources>
@@ -707,12 +730,12 @@
         <image name="greaterthan.circle.fill" catalog="system" width="128" height="121"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="p.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="search" width="152" height="331"/>
+        <image name="pika1" width="693" height="1154"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

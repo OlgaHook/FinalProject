@@ -25,11 +25,12 @@ class FirstViewController: UIViewController {
         styleLabelOutletCollection.forEach { label in
             label.layer.cornerRadius = 10
             label.layer.borderWidth = 1
+            label.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.7096483451, blue: 0.3958534476, alpha: 1)
             label.layer.borderColor = UIColor.black.cgColor
         }
         
         styleButtonOutletCollection.forEach { button  in
-            button.layer.cornerRadius = 15
+            button.layer.cornerRadius = 10
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.black.cgColor
             
