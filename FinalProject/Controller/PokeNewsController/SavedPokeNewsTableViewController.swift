@@ -109,20 +109,14 @@ class SavedPokeNewsTableViewController: UITableViewController {
             
         }
         
-        
+
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
+   
     
     //ddidSelectRow means, when I gonna tap on specific indexPath row then Ill go to mentioned View or another controller
     //and Im gonna pass value vc
@@ -136,7 +130,7 @@ class SavedPokeNewsTableViewController: UITableViewController {
         }
         self.title = "Saved"
         vc.urlPokeString = self.savedPokeItems[indexPath.row].pokeUrl ??
-            "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-08-20&sortBy=publishedAt"
+           "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-08-20&sortBy=publishedAt"
         navigationController?.pushViewController(vc, animated: true)
         
         

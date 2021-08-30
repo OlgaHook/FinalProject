@@ -20,7 +20,8 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+  
+       
         
         styleLabelOutletCollection.forEach { label in
             label.layer.cornerRadius = 10

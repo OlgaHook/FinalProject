@@ -51,6 +51,7 @@ class DetailPokeViewController: UIViewController {
         contentPokeTextView.text = contentPokeString
         
         newsPokeImageView.image = newsPokeImage
+        newsPokeImageView.layer.cornerRadius = 10
         
         //access AppDelegate
         //as! Appdelegate Class
