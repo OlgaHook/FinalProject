@@ -326,10 +326,10 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJm-9O-gKQ">
-                                <rect key="frame" x="117" y="217" width="180" height="180"/>
+                                <rect key="frame" x="134" y="215" width="146" height="143"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="bXP-Dt-ZhL"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="x0N-Y3-Lv3"/>
+                                    <constraint firstAttribute="height" constant="143" id="bXP-Dt-ZhL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="x0N-Y3-Lv3"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="pokeballButton"/>
                                 <connections>
@@ -341,14 +341,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="RGT-yI-cjb" secondAttribute="bottom" constant="-34" id="7rh-sN-SPc"/>
-                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="rJm-9O-gKQ" secondAttribute="trailing" constant="117" id="D9F-TE-FfB"/>
-                            <constraint firstItem="rJm-9O-gKQ" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="117" id="N3a-lt-h7s"/>
+                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="rJm-9O-gKQ" secondAttribute="trailing" constant="134" id="D9F-TE-FfB"/>
+                            <constraint firstItem="rJm-9O-gKQ" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="134" id="N3a-lt-h7s"/>
                             <constraint firstItem="RGT-yI-cjb" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" id="NDO-D7-vpf"/>
                             <constraint firstItem="ufL-Vz-ia0" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="20" id="cJQ-b9-vjX"/>
                             <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="ufL-Vz-ia0" secondAttribute="trailing" constant="51" id="dJN-Nb-ldN"/>
                             <constraint firstItem="ufL-Vz-ia0" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="52" id="jN3-Fj-0Cc"/>
                             <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="RGT-yI-cjb" secondAttribute="trailing" id="ocQ-R2-7ng"/>
-                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="rJm-9O-gKQ" secondAttribute="bottom" constant="465" id="qqO-Qp-dFr"/>
+                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="rJm-9O-gKQ" secondAttribute="bottom" constant="504" id="qqO-Qp-dFr"/>
                             <constraint firstItem="RGT-yI-cjb" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="-44" id="vt1-DS-tIi"/>
                         </constraints>
                     </view>

@@ -28,14 +28,15 @@ class FirstViewController: UIViewController {
         styleButtonOutletCollection.forEach { button  in
             button.layer.cornerRadius = 15
             button.layer.borderWidth = 1
+            button.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.7096483451, blue: 0.3958534476, alpha: 1)
             button.layer.borderColor = UIColor.black.cgColor
             
         }
       
         goToPokeNewsButton.layer.cornerRadius = 15
-        goToPokeNewsButton.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6168883878, blue: 0.1608045791, alpha: 1)
-        goToPokeNewsButton.layer.borderWidth = 1
-        goToPokeNewsButton.layer.borderColor = UIColor.black.cgColor
+        //goToPokeNewsButton.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6168883878, blue: 0.1608045791, alpha: 1)
+      //  goToPokeNewsButton.layer.borderWidth = 1
+        //goToPokeNewsButton.layer.borderColor = UIColor.black.cgColor
     }
     
   
