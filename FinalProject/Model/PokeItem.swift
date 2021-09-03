@@ -7,7 +7,7 @@
 
 //Here are specifis String var, that we gonna get from internet and present on TableView
 import UIKit
-//Gloss helps to JSON datain easier/faster way (added in Final project ->Swift Packages)
+//Gloss helps to JSON data in easier/faster way (added in Final project ->Swift Packages)
 import Gloss
 
 class PokeItem: JSONDecodable {

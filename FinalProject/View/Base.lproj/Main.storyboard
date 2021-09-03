@@ -22,7 +22,7 @@
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="kH1-XK-8Uk">
                                     <rect key="frame" x="0.0" y="224.00000034679067" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="color" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="color" systemColor="systemOrangeColor"/>
                                 </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pokeNews" rowHeight="175" id="CD4-ie-kid" customClass="PokeNewsTableViewCell" customModule="FinalProject" customModuleProvider="target">
@@ -269,6 +269,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vYR-oO-1lj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -296,7 +297,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-ZC-TAv">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="8Vi-IF-Xth"/>
+                                            <constraint firstAttribute="width" constant="50" id="8Vi-IF-Xth"/>
                                             <constraint firstAttribute="height" constant="50" id="Y5q-jG-aVk"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
@@ -309,7 +310,7 @@
                                         <rect key="frame" x="261" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2zT-XB-r9R"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="xA5-hz-awY"/>
+                                            <constraint firstAttribute="width" constant="50" id="xA5-hz-awY"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" image="checkmark.seal.fill" catalog="system">
@@ -326,7 +327,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJm-9O-gKQ">
-                                <rect key="frame" x="134" y="215" width="146" height="143"/>
+                                <rect key="frame" x="134" y="122" width="146" height="143"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="143" id="bXP-Dt-ZhL"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="x0N-Y3-Lv3"/>
@@ -341,14 +342,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="RGT-yI-cjb" secondAttribute="bottom" constant="-34" id="7rh-sN-SPc"/>
-                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="rJm-9O-gKQ" secondAttribute="trailing" constant="134" id="D9F-TE-FfB"/>
+                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rJm-9O-gKQ" secondAttribute="trailing" constant="134" id="D9F-TE-FfB"/>
                             <constraint firstItem="rJm-9O-gKQ" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="134" id="N3a-lt-h7s"/>
-                            <constraint firstItem="RGT-yI-cjb" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" id="NDO-D7-vpf"/>
+                            <constraint firstItem="RGT-yI-cjb" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" id="NDO-D7-vpf">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-111"/>
+                            </constraint>
                             <constraint firstItem="ufL-Vz-ia0" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="20" id="cJQ-b9-vjX"/>
-                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="ufL-Vz-ia0" secondAttribute="trailing" constant="51" id="dJN-Nb-ldN"/>
-                            <constraint firstItem="ufL-Vz-ia0" firstAttribute="leading" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="52" id="jN3-Fj-0Cc"/>
-                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="RGT-yI-cjb" secondAttribute="trailing" id="ocQ-R2-7ng"/>
-                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="bottom" secondItem="rJm-9O-gKQ" secondAttribute="bottom" constant="504" id="qqO-Qp-dFr"/>
+                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ufL-Vz-ia0" secondAttribute="trailing" constant="51" id="dJN-Nb-ldN"/>
+                            <constraint firstItem="rJm-9O-gKQ" firstAttribute="top" secondItem="ufL-Vz-ia0" secondAttribute="bottom" constant="8" symbolic="YES" id="eB6-Dc-4Nj"/>
+                            <constraint firstItem="ufL-Vz-ia0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lVZ-yd-DD7" secondAttribute="leading" constant="52" id="jN3-Fj-0Cc"/>
+                            <constraint firstItem="lVZ-yd-DD7" firstAttribute="trailing" secondItem="RGT-yI-cjb" secondAttribute="trailing" id="ocQ-R2-7ng">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-483"/>
+                            </constraint>
                             <constraint firstItem="RGT-yI-cjb" firstAttribute="top" secondItem="lVZ-yd-DD7" secondAttribute="top" constant="-44" id="vt1-DS-tIi"/>
                         </constraints>
                     </view>
@@ -362,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDq-L9-DXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86.956521739130437" y="391.74107142857139"/>
+            <point key="canvasLocation" x="86.383928571428569" y="391.304347826087"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YHV-24-Xxr">
@@ -396,6 +401,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v9U-BZ-uDh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

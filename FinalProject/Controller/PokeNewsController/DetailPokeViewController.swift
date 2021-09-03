@@ -38,7 +38,7 @@ class DetailPokeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //made some visual harmonisation
         buttonOutletCollection.forEach { button in
             button.layer.cornerRadius = 10
             button.layer.borderColor = UIColor.black.cgColor
@@ -78,7 +78,7 @@ class DetailPokeViewController: UIViewController {
         newPokeItem.newsContent = contentPokeString
         newPokeItem.pokeUrl = weburlPokeString
         
-        //save image as Binary data
+        //save image as Binary data, previously checking if image format is png
         guard let imageData: Data = newsPokeImage?.pngData() else {
             return
         }
@@ -91,7 +91,7 @@ class DetailPokeViewController: UIViewController {
         
     
     }
-    
+    // storyboard ID based segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination:WebPokeViewController = segue.destination as! WebPokeViewController
         destination.urlPokeString = weburlPokeString

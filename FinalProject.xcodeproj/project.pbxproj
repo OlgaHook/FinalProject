@@ -132,11 +132,11 @@
 		B46CFAEC26D3DF2B009E928F /* PokeNewsController */ = {
 			isa = PBXGroup;
 			children = (
-				B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */,
+				B46CFA5726CFD7F2009E928F /* NewsPokeViewController.swift */,
 				B46CFA7626CFFA9C009E928F /* PokeNewsTableViewCell.swift */,
+				B46CFAC026D2BA22009E928F /* WebPokeViewController.swift */,
 				B46CFABE26D2586D009E928F /* DetailPokeViewController.swift */,
 				B46CFAC226D3480A009E928F /* SavedPokeNewsTableViewController.swift */,
-				B46CFA5726CFD7F2009E928F /* NewsPokeViewController.swift */,
 			);
 			path = PokeNewsController;
 			sourceTree = "<group>";

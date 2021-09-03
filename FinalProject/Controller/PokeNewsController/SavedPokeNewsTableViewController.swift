@@ -15,7 +15,6 @@ class SavedPokeNewsTableViewController: UITableViewController {
     var savedPokeItems = [PokeItems]()
     var context: NSManagedObjectContext?
     
-    //var weburlPokeStringForSource = Int()
     
     @IBOutlet weak var editButtonTitle: UIBarButtonItem!
     
@@ -51,7 +50,7 @@ class SavedPokeNewsTableViewController: UITableViewController {
             loadData()
         }
     
-    //how many items saved
+    //how many items saved in section
     func counItems(){
         let itemsInTable = String(self.tableView.numberOfRows(inSection: 0))
         self.title = "Saved Pokemon News(\(itemsInTable))"
@@ -95,7 +94,6 @@ class SavedPokeNewsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "savedPokeData", for: indexPath) as? PokeNewsTableViewCell else{
             return UITableViewCell()
-            
         }
         
         let pokeItem = savedPokeItems[indexPath.row]
@@ -106,13 +104,9 @@ class SavedPokeNewsTableViewController: UITableViewController {
         if let pokeImage = UIImage(data: pokeItem.pokeImage!){
             cell.pokeNewsImage.image = pokeImage
             
-            
         }
-        
-
         return cell
     }
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -132,15 +126,13 @@ class SavedPokeNewsTableViewController: UITableViewController {
         vc.urlPokeString = self.savedPokeItems[indexPath.row].pokeUrl ??
            "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-08-30&sortBy=publishedAt"
         navigationController?.pushViewController(vc, animated: true)
-        
-        
     }
     
     
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        // Delete the row from the data source
+        // Delete the row from the data source.Alert has 2 ways - oe Cancel, or Delete
         if editingStyle == .delete {
             let alert = UIAlertController(title: "Delete", message: "Do you want to delete?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))

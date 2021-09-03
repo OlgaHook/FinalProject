@@ -23,7 +23,7 @@ class NewsPokeViewController: UIViewController {
         self.title = "Pokemon related World News"
         pokeNewsActivityIndicatorView.isHidden = true
         //to avoid news request pressing any time -> addes hangleGetData()
-        handleGetData()
+        //handleGetData()
         
     }
     
@@ -58,7 +58,7 @@ class NewsPokeViewController: UIViewController {
     
     func handleGetData(){
         let jsonUrl = "https://newsapi.org/v2/everything?apiKey=8b14d98abae14dd9ac3e37adbd3d60f5&q=pokemon&from=2021-08-30&sortBy=publishedAt"
-        //check if url is valid, if not -> just return
+        //check if url is valid, if not -> just return(nothing), so our APP is gonna stop and not gonna crash.
         guard let url = URL(string: jsonUrl) else {return}
         
         var urlRequest = URLRequest(url: url)
@@ -73,20 +73,18 @@ class NewsPokeViewController: UIViewController {
             if let err = err {
                 self.basicAlert(title: "Error!", message: "\(err.localizedDescription)")
             }
-            //data from sessionUrl.dataTask
+            //data from sessionUrl.dataTask, if url not valid, we receive warnings
             guard let data = data else {
                 
                 self.basicAlert(title: "Error!", message: "Something went wrong, no data")
                 
                 return
             }
-            
             do{
                 if let dictionaryData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]{
                     print("dictionaryData: ", dictionaryData)
-                    //passing DictionaryData to the func populateData
+                    //passing DictionaryData, that we receiving from URL to the func populateData
                     self.populateData(dictionaryData)
-                    
                 }
             }catch{
                 
@@ -94,7 +92,6 @@ class NewsPokeViewController: UIViewController {
         }
         //to call the session
         task.resume()
-        
     }
     //request for all info ,that is inside "articles"
     func populateData(_ dictionary: [String: Any]){
@@ -103,9 +100,10 @@ class NewsPokeViewController: UIViewController {
         }
         //Automatically,update pokeItem,or return empty one if something is gonna go bad -> []
         pokeItems = [PokeItem].from(jsonArray: responseDict) ?? []
-        //to present on a TableV we are running in a new thread
+        //to present on a TableV we are running in a new thread and reload the data
         DispatchQueue.main.async {
             self.pokeNewsTableView.reloadData()
+            //animation of Activity indicator stops
             self.activityIndicator(animated: false)
             
         }
@@ -119,7 +117,7 @@ extension NewsPokeViewController: UITableViewDelegate, UITableViewDataSource{
         //var pokeItems assigned above, automatically presenting .count, when reloading data
         return pokeItems.count
     }
-    
+    //here we present what should be populated at Tableview Cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "pokeNews", for: indexPath) as? PokeNewsTableViewCell else {
@@ -129,10 +127,9 @@ extension NewsPokeViewController: UITableViewDelegate, UITableViewDataSource{
         cell.pokeNewsLabel.text = pokeItem.pokeTitle
         cell.pokeNewsLabel.numberOfLines = 0
         
-        //to have image
+        //to have image, checking if we have an image
         if let pokeImage = pokeItem.pokeImage{
             cell.pokeNewsImage.image = pokeImage
-            
             
         }
         
